@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="buffer">
+        <!-- <h1></h1> -->
+    </div>
+    <div class="weather-container">
+        <div class="left-panel">
+            <div class="date-time">
+                <h2><span class="day-display">DAY</span> - <span class="time-display">TIME</span></h2>
+                <p class="date-display">04 10 2025</p>
+            </div>
+
+            <div class="svg-icon">
+
+            </div>
+
+            <div class="current-temp">
+                <h1 class="celcius">21°C</h1>
+                <p class="location">India, Mumbai</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-list">
+                    <!-- Dropdown -->
+                    <ul class="search-location">
+                        <!-- <li class="location-list">New York</li> -->
+                    </ul>
+                </div>
+                <div class="search-content">
+
+                    <input type="text" class="search-input" placeholder="Your can online India States">
+                    <button class="search-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <div class="right-panel">
+            <div class="dropdown-container">
+                <select id="day-dropdown">
+                    <option value="today" selected>Today</option>
+                    <option value="tomorrow">Tomorrow</option>
+                    <option value="week">This Week</option>
+                </select>
+            </div>
+
+            <div class="forecast-list">
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="./main.js"></script> -->
